@@ -3,4 +3,4 @@ In classification,  Accuracy, Precision, Recall, F1, Confusion Matrix, ROC, AUC 
 Editor:Summer    
 Institution: Shenzhen University    
 E-mail:1348825332@qq.com        
-Edit date:2018-12-16    
+Edit date:2018-12-27    
