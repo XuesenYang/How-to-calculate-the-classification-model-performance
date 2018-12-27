@@ -22,13 +22,13 @@ clf.fit(X_train, Y_train)
 ## testing
 y_pred=clf.predict(X_test)              # Predicted labels, as returned by a classifier.
 y_pred_proba=clf.predict_proba(X_test)  # Estimated probabilities
-y_pred_proba_positive=y_pred_proba[:,1]  # Estimated probabilities of positive samples
+y_pred_proba_positive=y_pred_proba[:,1] # Estimated probabilities of positive samples
 y_true=Y_test                           # Ground truth (correct) labels.
 
 ## Accuracy classification score.
 from sklearn.metrics import accuracy_score
 CA=accuracy_score(y_true, y_pred)                        # Classification Accuracy
-NCCS=accuracy_score(y_true, y_pred, normalize=False)    # Number of correctly classified samples
+NCCS=accuracy_score(y_true, y_pred, normalize=False)     # Number of correctly classified samples
 
 ## Compute precision-recall pairs for different probability thresholds
 from sklearn.metrics import precision_recall_curve
